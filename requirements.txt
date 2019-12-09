@@ -1,2 +1,3 @@
 qiskit
 django
+setuptools==0.7.3
