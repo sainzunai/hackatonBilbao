@@ -1,4 +1,5 @@
 qiskit
 django
+python
 setuptools==0.7.3
 django-toolbelt
