@@ -24,15 +24,6 @@
 				<!-- Section -->
 					<section id="first">
 						<header>
-								<h2>Inserte numero secreto:</h2>
-								<div id="search">
-									<form action="{% url 'insertar' %}" method= 'get'>
-										<input type="text" name="q" placeholder="numero...">
-										<input type="submit" value="Buscar">
-									</form>
-								</div>
-
-								
 								<h2>Intente adivinar el número secreto:</h2>
 								<div id="search">
 									<form action="{% url 'adivinar' %}" method= 'get'>
@@ -40,18 +31,24 @@
 										<input type="submit" value="Buscar">
 									</form>
 								</div>
+						
+								<h2>Inserte numero secreto:</h2>
+								<div id="search">
+									<form action="{% url 'insertar' %}" method= 'get'>
+										<input type="text" name="q" placeholder="numero...">
+										<input type="submit" value="Buscar">
+									</form>
+								</div>
+	
 							
 						</header>
 						<div class="content">
-							{% for i in object_list%}
-								
-									<pre>{{i}}</pre>
-							{%endfor%}
-
+								{% for i in object_list%}
+								<h2>{{i}}</h2>
+								{%endfor%}
 						</div>
 					</section>
 
-				
 		<!-- Scripts -->
 			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
 			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
