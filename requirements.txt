@@ -1,5 +1,2 @@
 qiskit
 django
-setuptools==0.7.3
-django-toolbelt
-virtualenv
