@@ -1,2 +1,2 @@
-qiskit
-django
+gunicorn==20.0.4
+virtualenv==16.7.8
